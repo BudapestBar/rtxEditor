@@ -7,5 +7,5 @@
   "main": "editor/editor.js",
   "license": "MIT",
   "homepage": "",
-  "private": true
+  "private": false
 }
