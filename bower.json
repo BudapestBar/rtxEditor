@@ -1,0 +1,11 @@
+{
+  "name": "rtxEditor",
+  "authors": [
+    "Adam Paller <hello@adampaller.com>"
+  ],
+  "description": "",
+  "main": "editor/editor.js",
+  "license": "MIT",
+  "homepage": "",
+  "private": true
+}

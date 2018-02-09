@@ -1,0 +1,28 @@
+.placeholders-wrapper::-webkit-scrollbar {
+  width: 9px;
+  background-color: none;
+}
+
+.placeholders-wrapper::-webkit-scrollbar-thumb {
+	background: #ddd;
+	border: 2px solid #fff;
+}
+
+.placeholders-wrapper {	
+	overflow: auto;
+	font-size: 14px;
+	height: 100%;
+}
+
+
+.placeholders-item {
+	margin-top: 7px;
+	margin-left: 60px;
+	color: #53537d;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.placeholders-item:hover {
+	text-decoration: underline;
+}

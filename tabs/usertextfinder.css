@@ -1,0 +1,73 @@
+.usertext-wrapper::-webkit-scrollbar {
+  width: 9px;
+  background-color: none;
+}
+
+.usertext-wrapper::-webkit-scrollbar-thumb {
+	background: #ddd;
+	border: 2px solid #fff;
+}
+
+.usertext-wrapper {	
+	overflow: auto;
+	font-size: 14px;
+	height: 100%;
+	padding-top: 15px;
+}
+
+
+.usertext-item {
+	margin: 0 15px;
+	//margin-left: 60px;
+	color: #53537d;
+	font-size: 12px;
+	cursor: pointer;
+	overflow: hidden;
+	max-height: 60px;
+	padding: 15px 5px;
+	border-bottom: 3px double #ddd;
+}
+
+.usertext-item .delete-item {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100%;
+	background: rgba(128,36,36,.93);
+	box-shadow: 0 0 1000px 1000px rgba(255,255,255,0);
+	cursor: pointer;
+	transition: .3s;
+}
+
+.usertext-item .delete-item:after {
+	content: "TÖRLÉS";
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	margin-top: -10px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 11px;
+}
+
+.usertext-item .delete-item:hover:after {
+	text-decoration: underline;
+}
+
+.usertext-item:hover {
+	background: #f3f3f3;
+}
+
+.usertext-item:hover .delete-item {
+	width: 60px;
+	box-shadow: 0 0 1000px 1000px rgba(255,255,255,.7);
+	transition: .3s 2s;
+}
+
+.usertext-item .item-wrapper * {
+	pointer-events: none;
+}

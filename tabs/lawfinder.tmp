@@ -1,0 +1,17 @@
+<div class="law-wrapper">
+	<div class="search-bar">
+		<span class="back" data-ui="back-to-results"></span>
+		<input type="text" data-ui="search-term" placeholder="Paragrafus, vagy keresett kifejezés"/>
+		<span class="search" data-ui="search"></span>
+		<span class="clear" data-ui="clear-search"></span>
+	</div>
+	<div class="law-container" data-ui="law-container"></div>
+	<div class="search-results"></div>
+	<div class="ctx-toolbar">
+		<div class="overlay" data-ui="ctx-toolbar-overlay"></div>
+		<div class="wrapper" data-ui="insert-law-text">
+			Kijelölés beszúrása
+		</div>
+		<div class="arrow"></div>
+	</div>
+</div>

@@ -1,0 +1,8 @@
+<div class="usertext-wrapper">
+	{texts}
+		<div class="usertext-item">
+			<div class="item-wrapper" data-ui="usertext-item">{text}</div>
+			<span class="delete-item" data-ui="delete-item" data-id="{id}"></span>
+		</div>
+	{/texts}
+</div>

@@ -1,0 +1,5 @@
+<div class="placeholders-wrapper">
+	{placeholders}
+		<div class="placeholders-item" data-ui="placeholder-item">{name}</div>
+	{/placeholders}
+</div>

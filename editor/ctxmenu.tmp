@@ -1,0 +1,23 @@
+<div class="ctx-menu">
+	<div class="overlay" data-ui="ctx-menu-overlay"></div>
+	<div class="ctx-wrapper">
+		<div class="ctx-tabs">
+			<span data-ui="ctx-tabs" data-target="usertexts" >Saját szövegek</span>
+			<span data-ui="ctx-tabs" data-target="placeholders" >Lebegő adatok</span>
+			<span data-ui="ctx-tabs" data-target="docs" >Dokumentumok</span>
+			<span data-ui="ctx-tabs" data-target="laws" >Jogszabályok</span>
+		</div>
+		<div class="tabcontent usertexts">Saját szövegek</div>
+		<div class="tabcontent docs">Dokumentumok</div>
+		<div class="tabcontent placeholders"></div>
+		<div class="tabcontent laws"></div>
+	</div>
+	<div class="arrow"></div>
+</div>
+<div class="ctx-toolbar">
+	<div class="overlay" data-ui="ctx-toolbar-overlay"></div>
+	<div class="wrapper" data-ui="save-user-text">
+		Hozzáadás a saját szövegekhez
+	</div>
+	<div class="arrow"></div>
+</div>

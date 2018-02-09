@@ -1,0 +1,15 @@
+<div class="rtx-toolbar" data-ui="rtx-toolbar">
+	<span data-ui="rtx-option" data-rtx-event="bold" class="rtx-bold"></span>
+	<span data-ui="rtx-option" data-rtx-event="italic" class="rtx-italic"></span>
+	<span data-ui="rtx-option" data-rtx-event="uline" class="rtx-uline"></span>
+	<span data-ui="rtx-option" data-rtx-event="ulist" class="rtx-ulist"></span>
+	<span data-ui="rtx-option" data-rtx-event="olist" class="rtx-olist"></span>
+	<span data-ui="rtx-option" data-rtx-event="left" class="rtx-left"></span>
+	<span data-ui="rtx-option" data-rtx-event="center" class="rtx-center"></span>
+	<span data-ui="rtx-option" data-rtx-event="right" class="rtx-right"></span>
+	<span data-ui="rtx-option" data-rtx-event="insert" class="rtx-insert"></span>
+	<span data-ui="rtx-option" data-rtx-event="addeditor" class="rtx-addeditor"></span>
+	<span data-ui="rtx-option" data-rtx-event="undo" class="rtx-undo"></span>
+	<span data-ui="rtx-option" data-rtx-event="redo" class="rtx-redo"></span>
+</div>
+<div data-ui="rtx-area" class="rtx-area" contenteditable="true"></div>

@@ -1,0 +1,532 @@
+.law-wrapper,
+.law-wrapper * {
+	position: relative;
+	font-family: verdana, arial, sans-serif;
+	outline: none;
+}
+
+.law-wrapper .content {
+	display: none;
+}
+
+.law-wrapper .show > .content,
+.law-wrapper .show .no-header > .content {
+	display: block;
+}
+
+.law-wrapper *::-webkit-scrollbar {
+  width: 9px;
+  background-color: none;
+}
+
+.law-wrapper *::-webkit-scrollbar-thumb {
+	background: #ddd;
+	border: 2px solid #fff;
+}
+
+.law-wrapper {
+
+
+	font-size: 14px;
+	color: #444;
+	width: 100%;
+	height: 100%;
+	//padding-bottom: 20px;
+	background: #fff;
+
+	//border: 1px solid #eee;
+
+	overflow: hidden;
+}
+
+.law-wrapper .search-bar {
+	height: 40px;
+	background: #fbfbfb;
+	z-index: 10;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+	z-index: 100;
+}
+
+.law-wrapper .law-container {
+	transition: .3s;
+	width: 100%;
+	height: 100%;
+}
+
+.law-wrapper .law-container:after {
+	content: " ";
+	display: block;
+	height: 60px;
+}
+
+.law-wrapper .law-container .container.volume {
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.law-wrapper .law-container,
+.law-wrapper .search-results {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: #fff;
+}
+
+.law-wrapper .search-results {
+	padding: 15px 0 0 0;
+	width: 100%;
+	height: 0;
+	top: 0px;
+	transition: .3s .1s;
+}
+
+.law-wrapper .search-results .result {
+	margin: 0 10px 13px 10px;
+	cursor: pointer;
+	overflow: hidden;
+	height: 35px;
+	//width: 560px;
+	border-radius: 3px;
+	white-space: nowrap;
+	padding-bottom: 13px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.law-wrapper .search-results .result:last-child {
+	border: none;
+	padding-bottom: 5px;
+}
+
+.law-wrapper .search-results .result * {
+	pointer-events: none;
+}
+
+.law-wrapper .search-results .paragraph {
+	display: inline-block;
+	vertical-align: top;
+	width: 50px;
+	height: 35px;
+	line-height: 35px;
+	text-align: right;
+	margin: 0;
+	padding-right: 5px;
+	margin-right: 5px;
+	font-weight: bold;
+	color: #fff;
+	color: #777;
+	border-right: 1px solid #ddd;
+	border-radius: 3px;
+	font-size: 16px;
+	font-family: arial;
+	transition: .2s;
+}
+
+.law-wrapper .search-results .result:hover .paragraph {
+	background: #9dca9d;
+	border-color: transparent;
+	color: #fff;
+}
+
+.law-wrapper .search-results .arrow {
+	display: inline-block;
+	vertical-align: top;
+	width: 35px;
+	height: 35px;
+	border-radius: 3px;
+	background: #ccc;
+	background: #9dca9d;
+	margin-left: 5px;
+	overflow: hidden;
+}
+
+.law-wrapper .search-results .arrow:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 11px;
+	left: 4px;
+	width: 13px;
+	height: 13px;
+	background: #fff;
+	transform: rotate(45deg);
+}
+
+.law-wrapper .search-results .arrow:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 10px;
+	height: 16px;
+	border-left: 11px solid #ccc;
+	border-left: 11px solid #9dca9d;
+	border-right: 4px solid #fff;
+	box-shadow: 0 0 0 2px #ccc;
+	box-shadow: 0 0 0 2px #9dca9d;
+}
+
+.law-wrapper .search-results p,
+.law-wrapper .search-results .path {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.law-wrapper .search-results p {
+	//width: 500px;
+	font-size: 13px;
+	//padding-top: 2px;
+	transition: .2s;
+	text-indent: 65px;
+	width: 100%;
+	margin-left: -60px;
+}
+
+.law-wrapper .search-results .result:hover p {
+	margin-left: -101px;
+	text-indent: 106px;
+}
+
+.law-wrapper .search-results .path {
+	display: block;
+	font-size: 7px;
+	//top: -1px;
+
+	text-transform: uppercase;
+	margin-top: 4px;
+	//background: #eee;
+	text-indent: 0;
+	margin-left: 60px;
+	transition: .2s ;
+}
+
+.law-wrapper .search-results .path b {
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	background: #def9ff;
+	padding: 0 5px;
+	border-radius: 3px;
+	font-weight: bold;
+}
+
+.law-wrapper .search-results .result:hover .path {
+	margin-left: 101px;
+}
+
+.law-wrapper h1 {
+	font-size: 10px;
+	background: #f9f9f9;
+	line-height: 30px;
+	margin-top: 15px;
+	color: #777;
+	color:#53537d;
+	text-indent: 10px;
+	cursor: pointer;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.law-wrapper h1:hover {
+	text-decoration: underline;
+}
+
+.law-wrapper .volume.show h1 {
+	color: #56b56b;
+}
+
+.law-wrapper h2 {
+	font-size: 16px;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 20px;
+	color: #2c2c94;
+	color: #53537d;
+	cursor: pointer;
+}
+
+.law-wrapper h3 {
+	font-size: 13px;
+	text-align: center;
+	color: #2c2c94;
+	color: #53537d;
+	margin-top: 20px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.law-wrapper strong {
+	color: #2c2c94;
+	color: #53537d;
+	cursor: pointer;
+}
+
+.law-wrapper .header {
+	cursor: pointer;
+}
+
+.law-wrapper .show > .header,
+.law-wrapper .show > p > .header {
+	color: #56b56b;
+}
+
+.law-wrapper h2:hover,
+.law-wrapper h3:hover,
+.law-wrapper strong:hover {
+	text-decoration: underline;
+}
+
+.law-wrapper p {
+	margin: 0;
+}
+
+.law-wrapper .paragraph {
+	margin: 1em;
+	overflow: hidden;
+	font-size: 13px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.law-wrapper .paragraph p {
+	display: inline;
+}
+
+.law-wrapper .no-header p {
+	display: block;
+	text-align: center;
+}
+
+.law-wrapper .no-header p span {
+	display: none;
+}
+
+.law-wrapper .paragraph.show {
+	white-space: normal;
+}
+
+.law-wrapper .paragraph.show p {
+	display: block;
+	text-align: left;
+}
+
+.law-wrapper .paragraph.show p span {
+	display: inline;
+}
+
+.law-wrapper .highlite {
+	font-weight: bold;
+	color: #8ac304;
+	border-bottom: 1px dashed #8ac304;
+}
+
+.law-wrapper .search-bar .back,
+.law-wrapper .search-bar .clear,
+.law-wrapper .search-bar .search,
+.law-wrapper .search-bar.clear .search,
+.law-wrapper .search-bar.back .search,
+.law-wrapper .search-bar input {
+	vertical-align: top;
+	width: 26px;
+	height: 26px;
+	//border: 1px solid red;
+	display: none;
+}
+
+.law-wrapper .search-bar .search,
+.law-wrapper .search-bar .clear,
+.law-wrapper .search-bar .back {
+	position: absolute;
+	top: 7px;
+	opacity: .7;
+	cursor: pointer;
+}
+
+.law-wrapper .search-bar .search:hover,
+.law-wrapper .search-bar .clear:hover,
+.law-wrapper .search-bar .back:hover {
+	opacity: 1;
+}
+
+.law-wrapper .search-bar .search,
+.law-wrapper .search-bar .clear {
+	right: 5px;
+}
+
+.law-wrapper .search-bar .back {
+	left: 5px;
+}
+
+.law-wrapper .search-bar input {
+	width: 100%;
+	margin-top: 4px;
+	height: 28px;
+	line-height: 28px;
+	text-indent: 7px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.law-wrapper .search-bar input:focus {
+	border-color: #bbb;
+}
+
+.law-wrapper ::placeholder {
+	color: #bbb;
+	font-style: italic
+}
+
+.law-wrapper .search-bar {
+	padding-left: 5px;
+	padding-right: 35px;
+}
+
+.law-wrapper .search-bar.back {
+	padding: 0 35px;
+}
+
+.law-wrapper .search-bar input,
+.law-wrapper .search-bar .search {
+	display: inline-block;
+}
+
+.law-wrapper .search-bar.clear .clear,
+.law-wrapper .search-bar.back .clear,
+.law-wrapper .search-bar.back .back {
+	display: inline-block;
+}
+
+.law-wrapper .search-bar .back:before,
+.law-wrapper .search-bar .back:after,
+.law-wrapper .search-bar .clear:before,
+.law-wrapper .search-bar .clear:after,
+.law-wrapper .search-bar .search:before,
+.law-wrapper .search-bar .search:after {
+	content: " ";
+	display: block;
+	position: absolute;
+}
+
+.law-wrapper .search-bar .back:before {
+	width: 10px;
+	height: 10px;
+	top: 7px;
+	left: 5px;
+	border-top: 3px solid #999;
+	border-left: 3px solid #999;
+	transform: rotate(-45deg);
+}
+
+.law-wrapper .search-bar .back:after {
+	width: 15px;
+	height: 3px;
+	top: 12px;
+	left: 5px;
+	background: #999;
+}
+
+.law-wrapper .search-bar .clear:before,
+.law-wrapper .search-bar .clear:after {
+	width: 20px;
+	height: 3px;
+	top: 12px;
+	left: 3px;
+	background: #999;
+	transform: rotate(-45deg);
+}
+
+.law-wrapper .search-bar .clear:after {
+	transform: rotate(45deg);
+}
+
+.law-wrapper .search-bar .search:before {
+	width: 10px;
+	height: 10px;
+	top: 3px;
+	left: 3px;
+	border-radius: 10px;
+	border: 3px solid #999;
+}
+
+.law-wrapper .search-bar .search:after {
+	width: 10px;
+	height: 3px;
+	top: 17px;
+	left: 14px;
+	background: #999;
+	transform: rotate(45deg);
+}
+
+.law-wrapper .law-container *::-moz-selection {
+	background: #fdeb85;
+}
+
+.law-wrapper .law-container *::selection {
+	background: #fdeb85;
+}
+
+.law-wrapper .ctx-toolbar .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	//background: rgba(0,0,0,.3);
+}
+
+.law-wrapper .ctx-toolbar {
+	position: fixed;
+	top: -1000px;
+	left: -1000px;
+	padding: 7px;
+	background: #8e8eff;
+	background: -moz-linear-gradient(top, #8e8eff 0%, #7a7aff 100%);
+	background: -webkit-linear-gradient(top, #8e8eff 0%,#7a7aff 100%);
+	background: linear-gradient(to bottom, #8e8eff 0%,#7a7aff 100%);
+	color: #fff;
+	white-space: nowrap;
+	font-size: 12px;
+	border-radius: 3px;
+	box-shadow: 0 0 15px -3px rgba(0,0,0,.8);
+	visibility: hidden;
+	z-index: 1001;
+}
+
+.law-wrapper .ctx-toolbar .wrapper {
+	cursor: pointer;
+}
+
+.law-wrapper .ctx-toolbar .wrapper:hover {
+	text-decoration: underline;
+}
+
+.law-wrapper .ctx-toolbar .arrow {
+	position: absolute;
+	width: 26px;
+	height: 16px;
+	overflow: hidden;
+	//border: 1px solid red;
+	bottom: -16px;
+	left: 50%;
+	margin-left: -13px;
+}
+
+.law-wrapper .ctx-toolbar .arrow:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 5px;
+	width: 16px;
+	height: 16px;
+	background: #7a7aff;
+	transform: rotate(45deg);
+	box-shadow: 0 0 15px -3px rgba(0,0,0,.8);
+}
